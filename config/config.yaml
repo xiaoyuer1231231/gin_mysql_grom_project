@@ -1,0 +1,24 @@
+server:
+  port: "8080"
+  mode: "debug"
+
+database:
+  host: "localhost"
+  port: 3306
+  user: "root"
+  password: "123456"
+  database: "go"
+  sslmode: "disable"
+  max_idle_conns: 10
+  max_open_conns: 100
+
+jwt:
+  key: "123456789"
+  issuer: "https://yourdomain.com"
+  audience: "jwt-auth-api"
+  expiration_hours: 24
+  refresh_days: 7
+
+logging:
+  level: "info"
+  format: "json"
